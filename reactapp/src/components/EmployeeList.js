@@ -22,7 +22,7 @@ class EmployeeList extends React.Component {
             {this.props.employees.map((employee, index) => (
               <tr key={index}>
                 <td>
-                  <img src={employee.picture.thumbnail} alt="image"></img>
+                  <img src={employee.picture.thumbnail} alt = ""/>
                 </td>
                 <td> {employee.name.first + " " + employee.name.last}</td>
                 <td> {employee.email}</td>
