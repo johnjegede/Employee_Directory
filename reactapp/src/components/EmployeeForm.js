@@ -10,7 +10,7 @@ function EmployeeForm(props) {
           value={props.search}
           name="search"
           type="text"
-          className="form-control"
+          className="form-control input"
           placeholder="SearchName"
           id="search"
         />
