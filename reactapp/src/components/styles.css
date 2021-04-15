@@ -1,0 +1,13 @@
+.header {
+  background: DodgerBlue;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.table {
+    text-align: center;
+
+  };

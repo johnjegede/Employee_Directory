@@ -1,14 +1,10 @@
 import React from "react";
 
-let styles = {
-  textAlign: "center",
-};
-
 class EmployeeList extends React.Component {
   render() {
     if (this.props.employees[0]) {
       return (
-        <table className="list-group" style={styles}>
+        <table className="list-group table">
           <thread className="list-group-item">
             <tr className="row">
               <th className="col-lg-2">Image</th>
@@ -20,14 +16,16 @@ class EmployeeList extends React.Component {
           </thread>
           <tbody>
             {this.props.employees.map((employee, index) => (
-              <tr key={index}>
-                <td>
-                  <img src={employee.picture.thumbnail} alt = ""/>
+              <tr className="row" key={index}>
+                <td className="col-lg-2">
+                  <img src={employee.picture.thumbnail} alt="" />
                 </td>
-                <td> {employee.name.first + " " + employee.name.last}</td>
-                <td> {employee.email}</td>
-                <td> {employee.phone}</td>
-                <td> {employee.dob.date}</td>
+                <td className="col-lg-2">
+                  {employee.name.first + " " + employee.name.last}
+                </td>
+                <td className="col-lg-3"> {employee.email}</td>
+                <td className="col-lg-3"> {employee.phone}</td>
+                <td className="col-lg-2"> {employee.dob.date}</td>
               </tr>
             ))}
           </tbody>

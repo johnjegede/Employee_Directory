@@ -2,16 +2,8 @@ import React from "react";
 import EmployeeForm from "./EmployeeForm";
 import EmployeeList from "./EmployeeList";
 import API from "../utils/API";
-import axios from "axios";
+import "./styles.css";
 
-let styles = {
-  backgroundColor: "DodgerBlue",
-  display: "flex",
-  justifyContent: "center",
-  padding: "25px",
-  marginBottom: "20px",
-  color: "white",
-};
 
 class EmployeeContainer extends React.Component {
   state = {
@@ -71,7 +63,7 @@ class EmployeeContainer extends React.Component {
   render() {
     return (
       <div>
-        <header style={styles}>
+        <header className = "header">
           <h1>Employee Directory</h1>
         </header>
         <EmployeeForm
